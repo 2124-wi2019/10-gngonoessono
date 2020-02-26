@@ -9,14 +9,10 @@ Thoendel
 
 document.getElementById('action').addEventListener('click', function() {
     //WRITE YOUR SOLUTION BETWEEN THIS COMMENT
-    
-const h1= document.getElementById("photo");
-const oldPhoto = h1.firstChild;
-const newPhoto = document.createElement("02.jpg");
-h1.replaceChild(newPhoto, oldPhoto);
+    document.getElementById("photo").src= "02.jpg"; //this code will change the original image to 02.jpg when use click on the action button//
 
-h1.setAttribute("class","greenText");
 
+    document.getElementsByTagName('h1')[0].setAttribute("class", "greenText"); //this code will set h1 to greenText//
 
     //AND THIS COMMENT
 });
